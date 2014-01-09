@@ -1,24 +1,374 @@
-header
+/* Global */
+
+body
 {
-    width: 950px;
-    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+
+    color: #8a8683;
+    background-color: #fff;
 }
 
-header h1
+img
+{
+    max-width: 100%;
+}
+
+a:link
+{
+    text-decoration: none;
+
+    color: #f68f67;
+}
+
+a:hover
+{
+    text-decoration: none;
+
+    color: #bde2df;
+}
+
+a:visited
+{
+    text-decoration: none;
+
+    color: #f68f67;
+}
+
+/* Navigation */
+
+.menu
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #fff;
+}
+
+#logo
+{
+    margin: 10px 0;
+
+    text-align: center;
+}
+
+#nav
+{
+    margin: 30px 0 0 0;
+
+    text-align: right;
+}
+
+.navigation
+{
+    float: right;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+.navigation li
 {
     float: left;
 
-    width: 200px;
+    padding: 0 0 0 50px;
 }
 
-header nav ul li
+.navigation li:hover
 {
-    float: left;
+    cursor: pointer;
 
-    width: 150px;
+    color: #a9d3d0;
 }
 
-#content
+.navigation .active
 {
-    clear: both;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: #f68f67;
+}
+
+/* General Slides */
+
+.slide
+{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    padding: 140px 0;
+
+    background-attachment: fixed;
+}
+
+/* Slide 1 */
+
+#slide1
+{
+    background-color: #fff;
+}
+
+#slide1 h1
+{
+    font-size: 3.8em;
+    font-weight: 700;
+    line-height: 0;
+
+    letter-spacing: -3px;
+
+    color: #8a8683;
+}
+
+#slide1 h2
+{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 0;
+
+    padding-bottom: 20px;
+
+    color: #8a8683;
+}
+
+/* Slide 2 */
+
+#slide2
+{
+    color: #fff;
+    background-color: #f68f67;
+    background-image: url('../img/footprints.png');
+}
+
+#slide2 h1
+{
+    font-size: 3.8em;
+    font-weight: 700;
+    line-height: 0;
+
+    letter-spacing: -3px;
+
+    color: #fff;
+}
+
+#slide2 h2
+{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 0;
+
+    padding-bottom: 20px;
+
+    color: #fff;
+}
+
+/* Slide 3 */
+
+#slide3
+{
+    background-color: #fff;
+}
+
+#slide3 h1
+{
+    font-size: 3.8em;
+    font-weight: 700;
+    line-height: 0;
+
+    letter-spacing: -3px;
+
+    color: #8a8683;
+}
+
+#slide3 h2
+{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 0;
+
+    padding-bottom: 20px;
+
+    color: #8a8683;
+}
+
+#test
+{
+    font-size: 2em;
+    font-weight: 400;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #bde2df;
+}
+
+/* Slide 4 */
+
+#slide4
+{
+    color: #fff;
+    background-color: #8a8683;
+    background-image: url('../img/sunglasses.png');
+}
+
+#slide4 h1
+{
+    font-size: 3.8em;
+    font-weight: 700;
+    line-height: 0;
+
+    letter-spacing: -3px;
+
+    color: #fff;
+}
+
+#slide4 h2
+{
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 0;
+
+    padding-bottom: 20px;
+
+    color: #fff;
+}
+
+/* Tablet */
+
+/* Mobile */
+
+@media screen and (max-width: 1024px)
+{
+
+    #logo
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #nav
+    {
+        width: 100%;
+        margin: 10px 0;
+
+        text-align: center;
+    }
+
+    .navigation
+    {
+        float: center;
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    .navigation li
+    {
+        float: left;
+
+        width: 25%;
+        padding: 0;
+    }
+
+    .slide
+    {
+        position: relative;
+
+        width: 100%;
+        padding: 150px 0;
+
+        background-attachment: fixed;
+    }
+
+    #decorative
+    {
+        display: none;
+    }
+
+    #content
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #slide1 h1,
+#slide1 h2,
+#slide2 h1,
+#slide2 h2,
+#slide3 h1,
+#slide3 h2,
+#slide4 h1,
+#slide4 h2
+    {
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+
+    #logo
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    #nav
+    {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .navigation
+    {
+        float: left;
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    .navigation li
+    {
+        float: left;
+
+        width: 25%;
+    }
+
+    .slide
+    {
+        position: relative;
+
+        width: 100%;
+        padding: 150px 0;
+
+        background-attachment: fixed;
+    }
+
+    #slide1 h1,
+#slide1 h2,
+#slide2 h1,
+#slide2 h2,
+#slide3 h1,
+#slide3 h2,
+#slide4 h1,
+#slide4 h2
+    {
+        line-height: 1em;
+    }
 }
