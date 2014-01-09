@@ -1,0 +1,4 @@
+@charset 'utf-8';
+@import url(reset.css);    /* デフォルトスタイルのリセット */
+@import url(base.css);    /* フォントサイズ等 */
+@import url(style.css);    /* 全サイト共通項目 */

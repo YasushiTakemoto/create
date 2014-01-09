@@ -1,0 +1,16 @@
+#slide1,
+#slide3,
+#slide5
+{
+    height: 1000px;
+
+    background-color: #000;
+}
+
+#slide2,
+#slide4
+{
+    height: 1000px;
+
+    background-color: #220;
+}

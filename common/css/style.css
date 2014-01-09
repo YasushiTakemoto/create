@@ -1,0 +1,24 @@
+header
+{
+    width: 950px;
+    margin: 0 auto;
+}
+
+header h1
+{
+    float: left;
+
+    width: 200px;
+}
+
+header nav ul li
+{
+    float: left;
+
+    width: 150px;
+}
+
+#content
+{
+    clear: both;
+}

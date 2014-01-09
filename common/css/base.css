@@ -1,0 +1,119 @@
+@charset 'utf-8';
+/* ==================================
+FONT SIZE ( YUI - fonts.css )
+
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+================================== */
+body
+{
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+
+    *font-size: small;
+    *font: x-small;
+}
+select,input,button,textarea
+{
+    font: 99% arial,helvetica,clean,sans-serif;
+}
+table
+{
+    font: 100%;
+    font-size: inherit;
+}
+pre,code,kbd,samp,tt
+{
+    font-family: monospace;
+    line-height: 100%;
+
+    *font-size: 108%;
+}
+
+/* Percentages for font-size
+10px = 77%
+11px = 85%
+12px = 93%
+13px = 100%
+14px = 108%
+15px = 116%
+16px = 123.1%
+17px = 131%
+18px = 138.5%
+19px = 146.5%
+20px = 153.9%
+21px = 161.6%
+22px = 167%
+23px = 174%
+24px = 182%
+25px = 189%
+26px = 197% */
+
+
+/* ==================================
+BODY
+================================== */
+body
+{
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',arial,helvetica,clean,sans-serif;
+    line-height: 1.6;
+
+    color: #444;
+    background: url(../img/common/bg.jpg) repeat top;
+}
+a
+{
+    text-decoration: none;
+
+    color: #444;
+}
+a:hover,
+a:active,
+a:focus
+{
+    text-decoration: underline;
+
+    color: #f93;
+}
+.linkcolor
+{
+    text-decoration: underline;
+
+    color: #f93;
+}
+h1,h2,h3,h4,h5,h6,strong
+{
+    font-weight: bold;
+}
+
+
+
+/* ==================================
+CLEAR
+================================== */
+.clear
+{
+    clear: both;
+}
+.clearfix:after
+{
+    font-size: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: ' ';
+}
+* html .clearfix
+{
+    zoom: 1;
+}
+*:first-child + html .clearfix
+{
+    zoom: 1;
+}
